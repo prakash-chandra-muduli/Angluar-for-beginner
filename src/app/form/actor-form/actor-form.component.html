@@ -1,0 +1,19 @@
+
+<form #actorForm="ngForm" (ngSubmit)="onSubmit()">
+    <label for="name">Name:</label>
+    <input id="name" name="name" [(ngModel)]="model.name" required />
+
+    <label for="skill">Skill:</label>
+    <select id="skill" name="skill" [(ngModel)]="model.skill" required>
+        <option *ngFor="let skill of skills" [value]="skill">{{ skill }}</option>
+    </select>
+
+    <label for="studio">Studio:</label>
+    <input id="studio" name="studio" [(ngModel)]="model.studio" required />
+
+    <button type="submit">Submit</button>
+</form>
+
+
+
+    
