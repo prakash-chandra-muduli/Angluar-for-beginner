@@ -1,0 +1,8 @@
+<div >
+    <h1>Structural and Attribute Directives</h1>
+  <!-- structure type Directives -->
+  <p *ngIf="isVisible">This is visible!</p>
+  <!-- Attribute type Directives -->
+  <p [ngClass]="isError ? 'error' : 'success'">Status message (ngClass)</p>
+  <p [class.error]="!isError" [class.success]="isError">Status message (class binding)</p>
+</div>

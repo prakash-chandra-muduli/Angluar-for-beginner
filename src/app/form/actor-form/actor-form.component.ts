@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgModel } from '@angular/forms';
 import { JsonPipe } from '@angular/common';
 import { Actor } from '../../actor';
 @Component({
   selector: 'app-actor-form',
   templateUrl: './actor-form.component.html',
+  styleUrls: ['./actor-form.component.css'],
   imports: [FormsModule],
 })
 export class ActorFormComponent {

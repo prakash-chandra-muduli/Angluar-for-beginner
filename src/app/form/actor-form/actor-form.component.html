@@ -1,5 +1,5 @@
 
-<form #actorForm="ngForm" (ngSubmit)="onSubmit()">
+<form #actorForm="ngForm" class="actor-form-container" (ngSubmit)="onSubmit()">
     <label for="name">Name:</label>
     <input id="name" name="name" [(ngModel)]="model.name" required />
 
