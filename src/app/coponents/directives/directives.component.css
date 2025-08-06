@@ -1,0 +1,25 @@
+:host {
+  display: block;
+  padding: 1rem;
+  border: 1px solid var(--gray-400);
+  border-radius: 0.5rem;
+  background: var(--gray-100);
+  
+}
+
+.error {
+  color: rgb(238, 139, 139);
+}
+
+.success {
+  color: rgb(224, 184, 23);
+}
+p {
+  margin: 0.5rem 0;
+}
+p[ngStyle] {
+  font-weight: bold;
+}
+p[ngClass] {
+  font-style: italic;
+}
